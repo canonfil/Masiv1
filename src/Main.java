@@ -5,65 +5,62 @@ public class Main {
 
         System.out.println("Задание 1");
         int[] number = new int[]{1, 2, 3};
-        float[] fraction = {1.57f, 7.654f, 9.986f};
-        int[] number2 = new int[10];
+        double[] fraction = new double[]{1.57, 7.654, 9.986};
+        boolean[] number2 = new boolean[]{true, false};
 
         System.out.println("Задача 2 ");
         for (int i = 0; i < number.length; i++) {
-            if (i > 0) {
-                System.out.println(" ,");
+            if (i == number.length - 1) {
+                System.out.print(number[i]);
+                break;
             }
-            System.out.print(number[i]);
+            System.out.print(number[i] + ",");
+
         }
-        System.out.println();
-        for (int i = 0; i < fraction.length; i++) {
-            if (i > 0) {
-                System.out.print(", ");
+
+        for (int a = 0; a< fraction.length; a++) {
+            if (a == fraction.length - 1) {
+                System.out.print(fraction[a]);
+                break;
             }
-            System.out.print(fraction[i]);
+            System.out.print(number[a] + ",");
         }
-        System.out.println();
-        for (int i = 0; i < number2.length; i++) {
-            if (i > 0) {
-                System.out.print(", ");
-            }
-            System.out.print(number[i]);
-        }
-        System.out.println();
 
         System.out.println("Задача 3");
-        int[] runArr = {1, 2, 3};
-        for (int e = runArr.length - 1; e >= 0; e--)
-        {
-            System.out.print(runArr[e]);
-            if (e != 0) {
-                System.out.print(",");
-            }
-            double[] startArr = {1.57, 7.654, 9.986};
-            for (int o = startArr.length - 1; o >= 0; o--) {
-                System.out.print(startArr[o]);
-                if (o != 0) {
-                    System.out.print(",");
+        for (int i = number.length - 1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.print(number[i] + ",");
+                break;
                 }
-                int[] blackArr = {58, 61, 65};
-                for (int ma = blackArr.length - 1; ma>=0 ; ma--) {
-                    System.out.print(blackArr[ma]);
-                    if (ma != 0) {
-                        System.out.print(" ,");
+                for (int a = fraction.length - 1; a >= 0; a--) {
+                    if (a == 0) {
+                        System.out.print(fraction[a] + ",");
+                        break;
                     }
-                    System.out.println("ЗАдаяа 4");
 
-                    int[] first = new int[] {1,2,3};
-                    for (int i= 0;i<first.length;i++){
-                        if (first [i] %2 !=0){
-                            first[1] +=1;
-                        }
-                    }
-                    System.out.println(Arrays.toString((first)));
 
-                }
+        System.out.println("ЗАдаяа 4");
 
+        for (i = 0; i < number.length; i++);{
+            if (number[i]% 2 != 0) {
+                number[i]++;
             }
+            if ( i == number.length -1) {
+                System.out.print(number[i]);
+                break;}
 
-        }
-    }}
+                System.out.println(number[i] + ",");
+            }
+                            for (a = 0; a < fraction.length; a++);
+                        {
+                            if (fraction[a] % 2 != 0) {
+                                fraction[a]++;
+                            }
+                            if (a == fraction.length - 1) {
+                                System.out.print(fraction[a]);
+                                break;}
+
+                                System.out.println(number[a] + ",");
+                            }
+
+                        }}}}
